@@ -25,8 +25,7 @@
 
 / {
     chosen {
-       zmk,matrix_transform =
-                       &ortho_transform;
+       zmk,matrix_transform = &ortho_transform;
     };
     
     {
@@ -73,10 +72,10 @@
             >;
         };
         
-            mouse_layer {
+        mouse_layer {
             label = "Mouse";
             bindings = <
-&trans &trans     &trans     &trans      &trans          &trans       &trans     &kp LC(V)         &kp LC(C)      &kp LC(X)     &kp LC(Z)     &kp trans
+&trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LC(V)      &kp LC(C)   &kp LC(X)  &kp LC(Z)  &kp trans
 &trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp LARW       &kp DARW    &kp UARW   &kp RARW   &trans
 &trans     &trans     &trans     &trans      &trans          &trans       &trans     &kp HOME       &kp PG_DN   &kp PG_UP  &kp END    &trans
                       &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans
