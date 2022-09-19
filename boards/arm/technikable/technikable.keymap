@@ -28,7 +28,6 @@
        zmk,matrix_transform = &ortho_transform;
     };
     
-    {
     behaviors {
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
