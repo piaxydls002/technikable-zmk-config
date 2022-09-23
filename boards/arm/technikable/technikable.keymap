@@ -28,19 +28,40 @@
        zmk,matrix_transform = &ortho_transform;
     };
     
+    macros {
+        lparm: lparm {
+            label = "l_par_m";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_release &kp LCTRL>
+                , <&macro_tap &kp LPAR>
+                ;
+        };
+        rparm: rparm {
+            label = "r_par_m";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_release &kp LCTRL>
+                , <&macro_tap &kp RPAR>
+                ;
+        };
+    };
+    
     behaviors {
         mm_lpar: mod_morphed_lpar {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_MORPHED_LPAR";
             #binding-cells = <0>;
-            bindings = <&kp LPAR>, <&kp LBKT>;
+            bindings = <&kp LPAR>, <&lparm>;
             mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL)>;
         };
         mm_rpar: mod_morphed_rpar {
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_MORPHED_RPAR";
             #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp RBKT>;
+            bindings = <&kp RPAR>, <&kp rparm>;
             mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL)>;
         };
         bhm: balanced_homerow_mods {
@@ -60,7 +81,7 @@
         base_layer {
             label = "Base";
             bindings = <
- &kp TAB    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp SEMI     &kp BSLH
+ &kp TAB    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &key_repeat   &kp BSLH
  &kp ESC    &bhm LWIN A  &bhm LALT R  &bhm LCTRL S    &bhm LSHFT T          &kp G          &kp M  &bhm RSHFT N    &bhm LCTRL E     &bhm LALT I   &bhm RWIN O &kp SQT
  &mm_lpar  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp FSLH     &mm_rpar
                        &kp LANG1  &kp LANG1    &lt NUM_L BSPC      &lt MOUSE_L DEL      &lt SYM_L RET        &lt NAV_L SPACE      &kp LANG1    &kp LANG1
@@ -101,9 +122,9 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans     &kp LBRC   &kp LS(N7) &kp PLUS  &kp EQUAL   &kp RBRC     &trans     &trans    &trans       &trans       &trans     &trans
-&trans     &kp COLON  &kp LS(N4) &kp MINUS  &kp UNDER   &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
-&trans     &kp TILDE  &kp LS(N1) &kp GRAVE  &kp TILDE   &kp LS(BSLH) &trans     &trans    &trans       &trans       &trans     &trans
+&trans     &trans   &trans   &kp PLUS  &kp EQUAL   &trans     &trans     &trans    &trans       &trans       &trans     &trans
+&trans     &trans   &trans   &kp MINUS  &kp UNDER   &trans     &trans     &trans    &trans       &trans       &trans     &trans
+&trans     &trans  &trans   &kp GRAVE  &kp TILDE   &trans    &trans     &trans    &trans       &trans       &trans     &trans
                       &trans     &kp SEMI      &kp COLON          &trans       &trans    &trans  &trans         &trans
             >;
         };
