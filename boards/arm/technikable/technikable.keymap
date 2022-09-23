@@ -49,17 +49,17 @@
  &kp TAB    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp SEMI     &kp BSLH
  &kp ESC    &bhm LWIN A  &bhm LALT R  &bhm LCTRL S    &bhm LSHFT T          &kp G          &kp M  &bhm RSHFT N    &bhm LCTRL E     &bhm LALT I   &bhm RWIN O &kp SQT
  &mt LSHFT LPAR  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp FSLH     &mt RSHFT RPAR
-                       &kp LANG1  &kp LANG1    &lt NAV_L BSPC      &lt MOUSE_L DEL      &lt SYM_L RET        &lt NUM_L SPACE      &kp LANG1    &kp LANG1
+                       &kp LANG1  &kp LANG1    &lt NUM_L BSPC      &lt MOUSE_L DEL      &lt SYM_L RET        &lt NAV_L SPACE      &kp LANG1    &kp LANG1
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR &trans     &trans     &trans      &trans          &trans       &trans     &kp LC(V)         &kp LC(C)      &kp LC(X)     &kp LC(Z)     &trans
-&trans     &trans     &trans     &trans      &trans          &trans       &kp CAPS     &kp LEFT       &kp DOWN    &kp UP   &kp RIGHT   &trans
-&bt BT(0)  &bt BT(1)  &bt BT(2) &bt BT(3)    &bt BT(4)       &trans       &kp INS     &kp HOME       &kp PG_DN   &kp PG_UP  &kp END    &trans
-                      &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans
+&kp INS    &kp HOME   &kp PG_DN  &kp PG_UP   &kp END         &trans       &bt BT_CLR &trans     &trans     &trans      &trans          &trans
+&kp CAPS   &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT       &trans       &trans     &trans     &trans     &trans      &trans          &trans
+&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)       &trans       &bt BT(0)  &bt BT(1)  &bt BT(2)  &bt BT(3)   &bt BT(4)       &trans
+                      &trans     &trans      &trans          &trans       &trans     &trans     &trans     &trans
             >;
         };
         
@@ -77,10 +77,10 @@
         num_layer {
             label = "Num";
             bindings = <
-&trans     &kp LBKT   &kp N7     &kp N8      &kp N9    &kp RBKT    &kp C_PREV    &trans         &trans       &trans       &trans     &trans
-&trans     &kp SEMI   &kp N4     &kp N5      &kp N6    &kp EQUAL   &kp C_NEXT    &trans         &trans       &trans       &trans     &trans
-&trans     &kp GRAVE  &kp N1     &kp N2      &kp N3    &kp BSLH    &trans        &trans         &trans       &trans       &trans     &trans
-                     &trans     &kp N0      &kp MINUS    &none         &none     &kp ESC        &kp DEL      &trans
+&trans    &trans     &trans       &trans      &trans     &trans     &kp LBKT   &kp N7     &kp N8      &kp N9    &kp RBKT    &trans
+&trans    &trans     &trans       &trans      &trans     &trans     &kp SEMI   &kp N4     &kp N5      &kp N6    &kp EQUAL   &trans
+&trans    &trans     &trans       &trans      &trans     &trans     &kp GRAVE  &kp N1     &kp N2      &kp N3    &kp BSLH    &trans
+                     &trans       &trans      &trans     &trans     &trans     &kp N0     &kp COMMA   &kp DOT
             >;
         };
 
