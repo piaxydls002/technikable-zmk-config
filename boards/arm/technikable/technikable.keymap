@@ -36,7 +36,6 @@
             bindings
                 = <&macro_release &kp LCTRL>
                 , <&macro_tap &kp LBKT>
-                , <&macro_press &kp LCTRL>
                 ;
         };
         rparm: rparm {
@@ -46,7 +45,6 @@
             bindings
                 = <&macro_release &kp LCTRL>
                 , <&macro_tap &kp RBKT>
-                , <&macro_press &kp LCTRL>
                 ;
         };
     };
