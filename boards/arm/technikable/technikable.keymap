@@ -101,10 +101,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans     &kp LBRC   &kp LS(N7) &kp LS(N8)  &kp LS(N9)   &kp RBRC     &trans     &trans    &trans       &trans       &trans     &trans
-&trans     &kp COLON  &kp LS(N4) &kp LS(N5)  &kp LS(N6)   &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
-&trans     &kp TILDE  &kp LS(N1) &kp LS(N2)  &kp LS(N3)   &kp LS(BSLH) &trans     &trans    &trans       &trans       &trans     &trans
-                      &trans     &kp LS(N0)      &trans          &trans       &trans    &trans  &trans         &trans
+&trans     &kp LBRC   &kp LS(N7) &kp PLUS  &kp EQUAL   &kp RBRC     &trans     &trans    &trans       &trans       &trans     &trans
+&trans     &kp COLON  &kp LS(N4) &kp MINUS  &kp UNDER   &kp PLUS     &trans     &trans    &trans       &trans       &trans     &trans
+&trans     &kp TILDE  &kp LS(N1) &kp GRAVE  &kp TILDE   &kp LS(BSLH) &trans     &trans    &trans       &trans       &trans     &trans
+                      &trans     &kp SEMI      &kp COLON          &trans       &trans    &trans  &trans         &trans
             >;
         };
 
