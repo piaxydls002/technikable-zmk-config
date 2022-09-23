@@ -29,6 +29,20 @@
     };
     
     behaviors {
+        mm_lpar: mod_morphed_lpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPHED_LPAR";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL)>;
+        };
+        mm_rpar: mod_morphed_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_MORPHED_RPAR";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp RBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL)>;
+        };
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -48,7 +62,7 @@
             bindings = <
  &kp TAB    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp SEMI     &kp BSLH
  &kp ESC    &bhm LWIN A  &bhm LALT R  &bhm LCTRL S    &bhm LSHFT T          &kp G          &kp M  &bhm RSHFT N    &bhm LCTRL E     &bhm LALT I   &bhm RWIN O &kp SQT
- &mt LSHFT LPAR  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp FSLH     &mt RSHFT RPAR
+ &mm_lpar  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp FSLH     &mm_rpar
                        &kp LANG1  &kp LANG1    &lt NUM_L BSPC      &lt MOUSE_L DEL      &lt SYM_L RET        &lt NAV_L SPACE      &kp LANG1    &kp LANG1
             >;
         };
