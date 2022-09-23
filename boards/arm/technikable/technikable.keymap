@@ -61,7 +61,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MOD_MORPHED_RPAR";
             #binding-cells = <0>;
-            bindings = <&kp RPAR>, <&kp rparm>;
+            bindings = <&kp RPAR>, <&rparm>;
             mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL)>;
         };
         bhm: balanced_homerow_mods {
