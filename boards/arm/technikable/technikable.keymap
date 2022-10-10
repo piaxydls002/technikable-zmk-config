@@ -81,10 +81,11 @@
         base_layer {
             label = "Base";
             bindings = <
- &kp TAB    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &key_repeat   &kp BSLH
- &kp ESC    &bhm LWIN A  &bhm LALT R  &bhm LCTRL S    &bhm LSHFT T          &kp G          &kp M  &bhm RSHFT N    &bhm LCTRL E     &bhm LALT I   &bhm RWIN O &kp SQT
- &mm_lpar  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp FSLH     &mm_rpar
-                       &kp LANG1  &kp LANG1    &lt NUM_L BSPC      &lt MOUSE_L DEL      &lt SYM_L RET        &lt NAV_L SPACE      &kp LANG1    &kp LANG1
+&kp TAB	&kp Q	&kp W	&kp F	&kp P	&kp B	&kp J	&kp L	&kp U	&kp Y	&kp SEMI	&kp BSLH
+&kp ESC	&bhm LWIN A	&bhm LALT R	&bhm LCTRL S	&bhm LSHFT T	&kp G	&kp M	&bhm RSHFT N	&bhm LCTRL E	&bhm LALT I	&bhm RWIN O	&kp SQT
+&mm_lpar	&kp Z	&kp X	&kp C	&kp D	&kp V	&kp K	&kp H	&kp COMMA	&kp DOT	&kp FSLH	&mm_rpar
+		&kp LANG1	&kp LANG1	&lt MOUSE_L BSPC	&lt NUM_L DEL	&lt SYM_L RET	&lt NAV_L SPACE	&kp LANG1	&kp LANG1		
+
             >;
         };
 
