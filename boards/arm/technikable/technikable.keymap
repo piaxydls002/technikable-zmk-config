@@ -51,6 +51,71 @@
         };
     };
     
+    
+    combos {
+         compatible = "zmk,combos";
+	 combo_q {
+	     timeout-ms = <50>;
+	     key-positions = <38 1>;
+	     bindings = <&kp LBRC>;
+	 };
+	 combo_w {
+	     timeout-ms = <50>;
+	     key-positions = <38 2>;
+	     bindings = <&kp RBRC>;
+	 };
+	 combo_a {
+	     timeout-ms = <50>;
+	     key-positions = <38 13>;
+	     bindings = <&kp LPAR>;
+	 };
+	 combo_r {
+	     timeout-ms = <50>;
+	     key-positions = <38 14>;
+	     bindings = <&kp RPAR>;
+	 };
+	 combo_z {
+	     timeout-ms = <50>;
+	     key-positions = <38 25>;
+	     bindings = <&kp LBKT>;
+	 };
+	 combo_x {
+	     timeout-ms = <50>;
+	     key-positions = <38 26>;
+	     bindings = <&kp RBKT>;
+	 };
+	 combo_f {
+	     timeout-ms = <50>;
+	     key-positions = <38 3>;
+	     bindings = <&kp PLUS>;
+	 };
+	 combo_p {
+	     timeout-ms = <50>;
+	     key-positions = <38 4>;
+	     bindings = <&kp EQUAL>;
+	 };
+	 combo_s {
+	     timeout-ms = <50>;
+	     key-positions = <38 15>;
+	     bindings = <&kp MINUS>;
+	 };
+	 combo_t {
+	     timeout-ms = <50>;
+	     key-positions = <38 16>;
+	     bindings = <&kp UNDER>;
+	 };
+	 combo_c {
+	     timeout-ms = <50>;
+	     key-positions = <38 27>;
+	     bindings = <&kp GRAVE>;
+	 };
+	 combo_d {
+	     timeout-ms = <50>;
+	     key-positions = <38 28>;
+	     bindings = <&kp TILDE>;
+	 };
+    };
+    
     behaviors {
         mm_lpar: mod_morphed_lpar {
             compatible = "zmk,behavior-mod-morph";
